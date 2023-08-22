@@ -27,7 +27,6 @@ body {
   color: #868686;
   height: 38px;
   padding: 6px 16px 7px;
-  border-right: 0px;
   transition: all 0.3s ease;
 }
 .custom-form-control:focus {
@@ -553,7 +552,17 @@ h1 .custom-heading{
 }
 
 
-
+/*------------------------------
+PAYMENT PAGE
+-------------------------------- */
+.custom-input-details{
+  height: 46px !important;
+  border-width: 2px;
+  border-radius: 3px;
+  padding: 0px 16px;
+  width: 98%;
+  font-size: 18px;
+}
 
 @media (max-width: 1399.98px) {  }
 
@@ -690,6 +699,9 @@ h1 .custom-heading{
 }
 #form-product-selection, .comments{
   padding-right: 15px;
+}
+.hide-on-small{
+  display: none;
 }
  }
 

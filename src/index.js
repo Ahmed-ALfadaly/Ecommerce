@@ -59,5 +59,59 @@ function calculateTotalPrice () {
     document.getElementById('total-price-for-all-product').innerHTML=totalpriceForAllProduct + '$'
 }
 
+// PAYMENT PAGE CC
+
+const citiesByCountries = {
+sa: ['الرياض','جدة'],
+eg: ['القاهرة','الاسكندرية'],
+jo: ['عمان','الزرقاء'],
+sy: ['حلب','دمشق','حمأه'],
+}
+document.querySelectorAll('select[name="country"]').forEach(item => {
+    item.addEventListener('change',() => {
+        const country = item.value
+        const cities = citiesByCountries[country]
+
+        document.querySelectorAll('#paymentcities option').forEach(option => option.remove())
+
+        const firstOption = document.createElement('option')
+        const optionText = document.createTextNode('اختر مدينة')
+        firstOption.appendChild(optionText)
+        firstOption.getAttribute('value','')
+        firstOption.getAttribute('disabled','true')
+        firstOption.getAttribute('selected','true')
+        const city_options = document.getElementById('paymentcities')
+        city_options.appendChild(firstOption)
+
+        cities.forEach(city => {
+            const newOption = document.createElement('option')
+            const optionText = document.createTextNode(city)
+            newOption.appendChild(optionText)
+            newOption.setAttribute('value',city)
+            city_options.appendChild(newOption)
+        })
+    })
+})
+
+document.querySelectorAll('#form-checkout input[name="payment_method"]').forEach(i => {
+    i.addEventListener('change',()=>{
+        const paymentMethod = i.value;
+        const creditCardInputs= document.querySelectorAll('#credit-card-info input');
+
+        if(paymentMethod === 'on_delivery')
+        {
+            creditCardInputs.forEach(input =>{
+                input.style.display='none'
+            })
+        }else
+        {
+            creditCardInputs.forEach(input =>{
+                input.style.display='block'
+        });
+    }
+})
+})
+
+
 document.getElementById("copyright").innerHTML = (' جميع الحقوق محفوظة للمتجر لسنة')+' '+new Date().getFullYear()
 console.log("اهلا بك ف متجر بالعربي")
