@@ -209,7 +209,7 @@ body {
   font-size: 24px;
 }
 .custom-thumbnail img {
-  height: 250px;
+  max-height: 250px;
   width: 100%;
   max-width: 250px;
 }
@@ -563,7 +563,54 @@ PAYMENT PAGE
   width: 98%;
   font-size: 18px;
 }
-
+/*------------------------------
+search Page
+------------------------*/
+#form-advanced-search{
+  border: 1px solid #ebebeb;
+  padding-bottom: 20px;
+  margin-bottom: 35px;
+  height: fit-content;
+}
+#form-advanced-search .panel{
+  border: none;
+  padding: 5px;
+}
+.panel .card-header{
+  background-color: transparent;
+  margin-bottom: 15px;
+  padding-bottom: 13px;
+}
+.custom-list-group .list-group-item{
+  border: none;
+  font-weight: bold;
+}
+.custom-list-group{
+  border-bottom: 1px solid #ebebeb;
+}
+.custom-pagination .page-link{
+  margin-left: 3px;
+  margin-right: 3px;
+  color: #c2c2c2 ;
+  width: 32px !important;
+  height: 32px !important;
+  text-decoration: none !important;
+  outline: none !important;
+  border: 1px solid #ebebeb;
+  transition: all 0.5s ease;
+}
+.custom-pagination .page-item.active .page-link{
+ background-color: #f8ad47 !important;
+ border-color: #f8ad47 !important;
+ color: #fff !important;
+}
+.custom-pagination .page-link:hover,
+.custom-pagination .page-link:focus,
+.custom-pagination .page-link:active{
+background-color: #fff !important;
+color: #f8ad47 !important;
+border-color: #f8ad47 !important;
+}
 @media (max-width: 1399.98px) {  }
 
 @media (max-width: 1199.98px) { 
@@ -654,6 +701,11 @@ PAYMENT PAGE
   line-height: 40px;
   margin: 5px;
   font-size: 20px;
+}
+.search-pagination{
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
  }
 
