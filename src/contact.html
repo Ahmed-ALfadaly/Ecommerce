@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة التواصل</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!----------------القائمه العلوية---------------->
+        <div class="row">
+            <nav class="navbar custom-navbar navbar-expand-lg">
+                <div class="container px-0">
+                    <div class="navbar-header">
+                        <button class="navbar-toggler btn btn-icon" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <i class="fas fa-bars fa-xl"></i>
+                        </button>
+                        <a class="btn-icon btn d-lg-none" id="bt-icon-cart" href="./checkout.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <a href="#" class="me-5">
+                            <img src="./images/logo.png" alt="متجر بالعربي" />
+                        </a>
+                    </div>
+                    <form action="" class="d-flex inline-form">
+                        <input type="search" class="form-control custom-form-control" placeholder="كلمة البحث..." />
+                        <div class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle custom-btn categories" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" area-expanded="false">اختر فئه</a>
+                            <ul class="dropdown-menu custom-dropdown-menu">
+                                <li>
+                                    <div class="checkbox ms-2">
+                                        <label>
+                                            <input type="checkbox" name="search-cateogry" value="men" />
+                                            رجالي
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox ms-2">
+                                        <label>
+                                            <input type="checkbox" name="search-cateogry" value="women" />
+                                            نسائي
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox ms-2">
+                                        <label>
+                                            <input type="checkbox" name="search-cateogry" value="child" />
+                                            اطفال
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="submit" class="btn search-btn">ابحث</button>
+                    </form>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a href="./index.html" class="nav-link">الصفحه الرئيسيه</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown2" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">اقسام المتجر</a>
+                                <ul class="dropdown-menu custom-dropdown-menu">
+                                    <li>
+                                        <a href="#" class="dropdown-item">رجالي</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">نسائي</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">اطفال</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./search.html" class="nav-link" aria-current="page">البحث المتقدم</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="./contact.html" class="nav-link">تواصل معنا</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="btn-icon btn d-none d-lg-block" id="bt-icon-cart" href="./checkout.html"
+                                    title="عربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!---------------- نهاية القائمه العلوية---------------->
+        <!-----------------map------------------------>
+        <div class="row">
+            <div class="col-12" id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.1828591189865!2d55.274284085515625!3d25.197055137890786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f434409a6abc5%3A0x33acfe7a9a726c38!2z2KjYsdisINiu2YTZitmB2Kkg2KfZhNil2YXYp9ix2KfYqiDYp9mE2LnYsdio2YrYqSDYp9mE2YXYqtit2K_YqQ!5e0!3m2!1sar!2s!4v1593965284754!5m2!1sar!2s"
+                    width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+        </div>
+        <!-----------------end of the map------------------------>
+        <div class="container">
+            <!----------------القائمه الفرعيه---------------->
+            <div class="row" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb custom-breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="./index.html">الصفحة الرئيسية</a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        صفحة التواصل
+                    </li>
+                </ol>
+            </div>
+            <!---------------- نهايةالقائمه الفرعيه---------------->
+            <!----------------  بداية الفورم---------------->
+            <div id="contact-info" class="row">
+                <div class="col-lg-3 offset-lg-2">
+                    <h3 class="heading heading-with-border-bottom">معلومات التواصل</h3>
+                    <div class="contact-details">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone fa-lg"></i>
+                            974.4422.7813
+                        </div>
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope fa-lg"></i>
+                            info@araby.com
+                        </div>
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt fa-lg"></i>
+                            العنوان: الإمارات العربية المتحدة، دبي، برج خليفة
+                        </div>
+                    </div>
+                    <form>
+                        <h3 class="heading heading-with-border-bottom"> اشترك بالنشره البريدية</h3>
+                        <br>
+                        <div class="input-group">
+                            <input type="email" name="email" id="footer-input" class="form-control custom-form-control"
+                                placeholder="البريد الالكتروني">
+                            <button type="submit" class="btn custom-btn-warning contact-button">متابعة</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <h3 class="heading special">اترك رسالة</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="name" class="form-control form-control-lg custom-form-control " 
+                                name="name" placeholder="الاسم" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="name" class="form-control form-control-lg custom-form-control" 
+                                name="email" placeholder="البريد الالكتروني" required>
+                        </div>
+                        <div class="col-12">
+                            <textarea name="text" class="form-control form-control-lg custom-form-control"
+                                name="message">نص الرسالة</textarea>
+                        </div>
+                        <div class="col-12 my-4">
+                            <button type="submit" class="btn custom-btn-warning contact-button float-end">
+                                ارسال الرسالة
+                                <i class="far fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------------  نهاية بداية الفورم---------------->
+        </div>
+    </div>
+    <!------------تذييل الصفحة------------>
+    <footer class="row">
+        <div id="brand-logos" class="text-center">
+            <span>المتجر وكيل معتمد لكبري الشركات العالمية</span>
+            <div class="img-container">
+                <img src="./images/adidas.png" alt="adidas">
+                <img src="./images/lacoste.png" alt="lacoste">
+                <img src="./images/puma.png" alt="puma">
+                <img src="./images/polo.png" alt="polo">
+            </div>
+        </div>
+        <div id="footer-nav" class="text-center">
+            <div class="footer-logo">
+                <a href="./index.html">
+                    <img src="./images/logo_footer.png" alt="footer-logo">
+                </a>
+            </div>
+            <div class="footer-nav-links d-md-block d-none">
+                <a href="./index.html">الصفحة الرئيسية</a>
+                <a href="./search.html">البحث المتقدم</a>
+                <a href="./contact.html">تواصل معنا</a>
+            </div>
+            <div class="newsletter col-md-6 offset-md-3">
+                <form>
+                    <label for="footer-input">تابع النشره البريدية لاحدث العروض</label>
+                    <br>
+                    <div class="input-group">
+                        <input type="email" name="email" id="footer-input" class="form-control custom-form-control"
+                            placeholder="البريد الالكتروني">
+                        <button type="submit" class="btn custom-btn-warning">متابعة</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="footer-copyright-social">
+            <div class="container">
+                <div class="clearfix">
+                    <div id="copyright" class="float-start">
+                        جميع الحقوق محفوظة للمتجر لسنة2023
+                    </div>
+                    <div class="social-icons float-end">
+                        <a href="https://www.facebook.com">
+                            <i class="fa-brands fa-square-facebook fa-lg"></i>
+                        </a>
+                        <a href="https://www.twitter.com">
+                            <i class="fa-brands fa-square-twitter fa-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com">
+                            <i class="fa-brands fa-instagram fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!------------ نهاية تذييل الصفحة ------------>
+</body>
+
+</html>

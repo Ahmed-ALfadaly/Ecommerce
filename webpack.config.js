@@ -32,7 +32,7 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/i,
+        test: /\.(sa|sc|c)ss$/i,
         exclude: /bootstrap\.min\.css$/i,
         use: [
           {
@@ -42,6 +42,7 @@ module.exports = {
             },
           },
           "css-loader",
+          "sass-loader",
         ],
       },
       {
@@ -92,6 +93,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "search.html",
       template: "./src/search.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "contact.html",
+      template: "./src/contact.html",
     }),
     new MiniCssExtractPlugin({
       filename: "css/style.css",
