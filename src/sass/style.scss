@@ -40,14 +40,6 @@
   border-color: $brand-warning;
 }
 
-.custom-btn-warning:hover,
-.custom-btn-warning:focus,
-.custom-btn-warning:active:focus,
-.custom-btn-warning:active:hover {
-  background-color: $btn-warning-color-dark;
-  border-color: $btn-warning-color-dark;
-}
-
 .custom-btn-outline-danger {
   @include button-style($brand-danger)
 }
